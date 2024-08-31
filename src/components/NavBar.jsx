@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { FaXTwitter } from 'react-icons/fa6';
 import { Outlet, Link, useNavigate, useNavigation, useRoutes, useLocation, NavLink } from "react-router-dom";
 import { LuMenu } from 'react-icons/lu'
+import { motion } from 'framer-motion';
+
 
 const NavBar = () => {
 
@@ -31,14 +33,14 @@ const NavBar = () => {
 
     const [openMenu, setOpenMenu] = useState(false);
     const handleMenu = () => {
-        console.log('pressed')
+       // console.log('pressed')
         return setOpenMenu(!openMenu)
     }
 
     return (
         <div className='w-full min-h-fit relative bg-black'>
             {/**navigation menu for mobile */}
-            {openMenu && <ul className="absolute flex bg-inherit  flex-col lg:hidden   text-2xl text-gray-300 w-full h-full items-end z-50 ">
+            {openMenu && <motion.ul className="absolute flex bg-inherit  flex-col lg:hidden  bg-black  text-2xl text-gray-300 w-full h-full items-end z-50 ">
                 <div className="flex w-full items-start  mb-4 p-4">
                     <FaXTwitter color='white' size={18} onClick={handleMenu} />
                 </div>
@@ -60,7 +62,7 @@ const NavBar = () => {
                 )}
                 </ul>
 
-            </ul>}
+            </motion.ul>}
             
             <nav className="relative flex justify-between items-center font-semibold py-6 w-full  px-4">
                 <div className="logo text-2xl md:text-4xl text-white"><Link to={'/'}>Solomon</Link></div>
