@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { p1, p2 } from '../assets/assetFiles';
 import ProjectCard from '../components/ProjectCard';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 
 
@@ -56,7 +57,14 @@ const ProjectPage = () => {
      window.scrollTo({top:0})
     }
   return (
-    <section className="flex flex-col  w-full min-h-screen text-white pb-24 px-4">
+    <motion.section
+    initial={{opacity:0}}
+    whileInView={{opacity:1, transition:{
+        duration:1
+    }}}
+    animate={{
+      // opacity:1
+    }}  className="flex flex-col  w-full min-h-screen text-white pb-24 px-4">
         <h2 className="title text-4xl font-bold text-center h-[80px] bg-slate-900/0 flex justify-center items-center uppercase rounded-md">My Project</h2>
         <div className='mx-auto font-mono'>
             {/* isMobile */}
@@ -70,7 +78,7 @@ const ProjectPage = () => {
         </div>
 
 
-    </section>
+    </motion.section>
   )
 }
 

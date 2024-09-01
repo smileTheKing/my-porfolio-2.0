@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import AboutPage from './AboutPage';
 import ProjectPage from './ProjectPage';
 import ContactPage from './ContactPage';
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
   return (

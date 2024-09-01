@@ -8,7 +8,7 @@ const ProjectCard = ({ data, onClick }) => {
             {data.image != null ? 
             
             <div className="relative h-full cursor-pointer">
-                <div className="z-40 items-center flex flex-col text-center  opacity-0 hover:opacity-95 transition duration-200 ease-in-out backdrop-blur-sm overflow-hidden capitalize rounded-md absolute w-full h-full bg-black/80 p-4 gap-4">
+                <div className="z-40 items-center flex flex-col text-center  opacity-0 hover:opacity-95 transition duration-500 ease-in-out backdrop-blur-sm overflow-hidden capitalize rounded-md absolute w-full h-full bg-black/80 p-4 gap-4">
                 <h1 className='font-bold text-2xl'>{data.title}</h1>
                 <p>{data.description}</p>
                 <div className="row flex flex-col items-center gap-4 flex-wrap justify-center">

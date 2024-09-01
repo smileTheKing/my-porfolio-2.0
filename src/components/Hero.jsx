@@ -4,10 +4,17 @@ import { FaFacebookF, FaX,FaLinkedinIn } from 'react-icons/fa6';
 import { me, myPicture } from '../assets/assetFiles';
 import Button from './Button';
 import { IoIosArrowDown } from 'react-icons/io';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className=" w-full md:h-dvh h-full p-4 flex flex-col justify-evenly  text-white">
+    <motion.section
+    
+    initial={{opacity:0}}
+    whileInView={{opacity:1, transition:{
+        duration:1
+    }}}
+    className=" w-full md:h-dvh h-full p-4 flex flex-col justify-evenly  text-white">
       <div className="flex flex-col md:flex-row items-center">
       <div className="left-side w-full md:w-2/3 h-full flex flex-col justify-center gap-y-8 ">
           <h4 className='uppercase'>
@@ -49,7 +56,7 @@ const Hero = () => {
         <div className="text-orange-500 text-3xl flex self-center animate-bounce mb-8">
           <IoIosArrowDown/>
         </div>
-    </section>
+    </motion.section>
   )
 }
 

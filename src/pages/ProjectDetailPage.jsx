@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { dummyData } from '../assets/assetFiles';
 import { IoClose } from 'react-icons/io5';
+import { motion } from 'framer-motion';
 
 const ProjectDetailPage = () => {
     const[data,setData]=useState(dummyData)
@@ -28,9 +29,14 @@ const ProjectDetailPage = () => {
       Loading....
     </div>:
 
-<main className='text-white w-full min-h-screen p-4 flex flex-col'>
-<div className=" h-20 flex items-center ">
-  <span className='bg-red-700 p-2 rounded-md h-fit hover:opacity-80 transition-all'><Link to={'/projects'}>Go back</Link></span>
+<motion.section 
+ initial={{opacity:0}}
+ whileInView={{opacity:1, transition:{
+     duration:1
+ }}}
+className='text-white w-full min-h-screen p-4 flex flex-col'>
+<div className=" h-20 flex items-center self-end">
+  <span className='bg-red-700 p-2  rounded-md h-fit hover:opacity-80 transition-all'><Link to={'/projects'}>Go back</Link></span>
 </div>
 <div className="wrapper w-full h- flex flex-col md:flex-row ">
 <div className="left w-full md:w-2/4 h-fit flex">
@@ -50,7 +56,7 @@ const ProjectDetailPage = () => {
 
 
 
-</main>
+</motion.section>
     }
    </>
   )

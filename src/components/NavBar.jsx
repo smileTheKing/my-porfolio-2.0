@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaXTwitter } from 'react-icons/fa6';
-import { Outlet, Link, useNavigate, useNavigation, useRoutes, useLocation, NavLink } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 import { LuMenu } from 'react-icons/lu'
 import { motion } from 'framer-motion';
 
@@ -38,7 +38,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className='w-full min-h-fit relative bg-black'>
+        <div className='w-full transition-all duration-1000 min-h-fit relative bg-black'>
             {/**navigation menu for mobile */}
             {openMenu && <motion.ul className="absolute flex bg-inherit  flex-col lg:hidden  bg-black  text-2xl text-gray-300 w-full h-full items-end z-50 ">
                 <div className="flex w-full items-start  mb-4 p-4">
