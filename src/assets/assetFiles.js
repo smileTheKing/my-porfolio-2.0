@@ -1,3 +1,4 @@
+//import me from "./images/me.png"
 import myPicture from "./images/me.png"
 import me from "./images/IMG.png"
 import p1 from "./images/project-1.png"

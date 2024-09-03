@@ -32,7 +32,7 @@ const ProjectDetailPage = () => {
 <motion.section 
  initial={{opacity:0}}
  whileInView={{opacity:1, transition:{
-     duration:1
+     duration:0.75
  }}}
 className='text-white w-full min-h-screen p-4 flex flex-col'>
 <div className=" h-20 flex items-center self-end">

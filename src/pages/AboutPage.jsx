@@ -1,9 +1,19 @@
 import React from 'react'
-import { myPicture } from '../assets/assetFiles'
+import { myPicture,me } from '../assets/assetFiles'
+import { motion } from 'framer-motion'
 
 const AboutPage = () => {
   return (
-    <section className=" w-full md:min-h-screen h-fit overflow-hidden p-4 flex flex-col md:flex-row  text-white">
+    <motion.section 
+    initial={{opacity:0}}
+    whileInView={{
+     
+     
+      opacity:1,
+      transition:{
+        duration:0.75
+      } }}
+      className=" w-full md:min-h-screen h-fit overflow-hidden p-4 flex flex-col md:flex-row  text-white">
 
       <div className="left-side md:w-3/5 h-full flex flex-col justify-center gap-y-5 ">
         <h1 className='font-semibold uppercase text-3xl'>
@@ -33,16 +43,19 @@ const AboutPage = () => {
 
 
       <div className='w-full md:w-2/4 flex flex-col items-center justify-start'>
-        <img className=" w-[250px]  object-cover" src={myPicture} alt="my picture" />
-        <div className="flex flex-col ">
+        <img className=" w-[250px]  object-cover" src={me} alt="my picture" />
+        {/* <div className="flex flex-col self-start">
           <h2 className='font-bold'>Solomon Cammue</h2>
           <h2>s.ammue@gmail.com</h2>
           <h2>Solomon Cammue</h2>
-        </div>
+
+
+         
+        </div> */}
 
       </div>
 
-    </section>
+    </motion.section>
   )
 }
 
