@@ -15,7 +15,7 @@ const Hero = () => {
     }}}
     className=" w-full md:h-screen min-h-full flex flex-col justify-around gap-8 md:gap-0  text-white bg-red-200x">
       <div className="flex flex-col md:flex-row items-center gap-6">
-      <div className="left-side w-full md:w-2/3 h-full flex flex-col justify-center gap-y-8 ">
+      <div className="left-side w-full md:w-2/3 h-full flex flex-col justify-center gap-y-4 ">
           <h4 className='uppercase'>Hi there!</h4>
             <h1 className="text-3xl md:text-6xl font-semibold ">
             I&rsquo;m Solomon
