@@ -16,9 +16,9 @@ const Hero = () => {
     className=" w-full md:h-screen min-h-full flex flex-col justify-around gap-8 md:gap-0  text-white bg-red-200x">
       <div className="flex flex-col md:flex-row items-center gap-6">
       <div className="left-side w-full md:w-2/3 h-full flex flex-col justify-center gap-y-8 ">
-          <h4 className='uppercase'>Hi there! I&rsquo;m</h4>
+          <h4 className='uppercase'>Hi there!</h4>
             <h1 className="text-3xl md:text-6xl font-semibold ">
-               Solomon Cammue
+            I&rsquo;m Solomon
             </h1>
             <p className="font-thin text-[1.5rem] md:text-2xl text-wrap text-gray-300 ">
                 A <span className='text-orange-500'>front-end web Developer</span> passionate about creating interactive applications and experiences on the web.
