@@ -1,4 +1,3 @@
-import React from 'react';
 import Input from '../components/Input'
 import Button from '../components/Button';
 import { FaGithub } from 'react-icons/fa';
@@ -18,10 +17,11 @@ const ContactPage = () => {
         duration:0.75
       }
     }}
-    className='w-full overflow-hidden h-screen flex flex-col md:flex-row items-start p-4  md:py-12  justify-center'>
+    id='contact'
+    className='w-full overflow-hidden h-screen flex flex-col md:flex-row items-start  md:py-12  justify-center mb-12'>
        <div className="left-section w-full justify-center text-wrap md:w-2/4 h-full gap-4 flex flex-col text-white pb-6 md:pb-0">
        <div className=" md:h-[500px] pt-4 bg-red-200/0 flex flex-col space-y-6">
-       <h1 className='text-2xl text-orange-500 bg-orange-100 shadow w-fit p-2 rounded-md'>Let's Connect! 💌</h1>
+       <h1 className='text-2xl text-orange-500 bg-orange-100 shadow w-fit p-2 rounded-md'>Let&apos;s Connect! 💌</h1>
        <p className='text-slate-400 md:w-[450px]'>
        If you ever want to grab a coffee/bubble tea (virtually) or just want a quick chat - you can find me on social media or you can send me a message here!
        </p>
