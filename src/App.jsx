@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 
 
- const Layout = ()=> <div className="container mx-auto min-h-screen"><NavBar/></div>
+ const Layout = ()=> <div className="container md:px-36 mx-auto min-h-screen"><NavBar/></div>
 
 
 const AppNavigation = () => {

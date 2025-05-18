@@ -1,6 +1,7 @@
 // import React from 'react'
 import { me } from '../assets/assetFiles'
 import { motion } from 'framer-motion'
+import { Skill, } from '../components/SkillsWrap';
 
 const AboutPage = () => {
   return (
@@ -20,14 +21,33 @@ const AboutPage = () => {
         <h1 className='font-semibold uppercase text-3xl'>
           about me
         </h1>
-        <p className='text-wrap text-xl font-thin'>
-        Front-end web developer with a passion for crafting interactive applications and experiences for web and mobile platforms. I thrive on turning designs into engaging, user-friendly interfaces that seamlessly blend form and function. My expertise lies in creating responsive, accessible, and performant web applications that delight users across devices.
+        <p className='text-wrap text-lg md:text-balance font-thin'>
+        Full-stack developer with a passion for crafting interactive applications and experiences for web and mobile platforms. I thrive on turning designs into engaging, user-friendly interfaces that seamlessly blend form and function. My expertise lies in creating responsive, accessible, and performant web applications that delight users across devices.
         </p>
 
 
         <div className="space-y-4 flex flex-col items-start">
-          <h3 className=" font-semibold">Tools/Skillset</h3>
-          <ul className="flex flex-col gap-1 list-disc w-full px-4">
+          <Skill name={'My Skillset'}>
+            <div className="bg-orange-500/90 p-2 rounded">JavaScript</div>
+            <div className="bg-orange-500/90 p-2 rounded">React</div>
+            <div className="bg-orange-500/90 p-2 rounded">NodeJs</div>
+            <div className="bg-orange-500/90 p-2 rounded">Express</div>
+            <div className="bg-orange-500/90 p-2 rounded">MongoDB</div>
+            <div className="bg-orange-500/90 p-2 rounded">Postman</div>
+            <div className="bg-orange-500/90 p-2 rounded">Git</div>
+            <div className="bg-orange-500/90 p-2 rounded">Figma</div>
+            <div className="bg-orange-500/90 p-2 rounded">Flutter</div>
+            <div className="bg-orange-500/90 p-2 rounded">HTML</div>
+            <div className="bg-orange-500/90 p-2 rounded">CSS3</div>
+            <div className="bg-orange-500/90 p-2 rounded">Tailwind CSS</div>
+            <div className="bg-orange-500/90 p-2 rounded">Bootstrap</div>
+            <div className="bg-orange-500/90 p-2 rounded">React Native</div>
+            <div className="bg-orange-500/90 p-2 rounded">NextJs</div>
+            <div className="bg-orange-500/90 p-2 rounded">Python</div>
+            <div className="bg-orange-500/90 p-2 rounded">Flask</div>
+          </Skill>
+          {/* <h3 className=" font-semibold">Tools/Skillset</h3> */}
+          {/* <ul className="flex flex-col gap-1 list-disc w-full px-4">
             <li>Figma</li>
             <li>HTML</li>
             <li>CSS3</li>
@@ -38,7 +58,7 @@ const AboutPage = () => {
             <li>React</li>
             <li>Flutter</li>
             <li>Postman</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
 

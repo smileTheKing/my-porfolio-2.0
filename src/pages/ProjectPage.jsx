@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { p1, p2 } from '../assets/assetFiles';
+import { p1, p2,analytic, saloon } from '../assets/assetFiles';
 import ProjectCard from '../components/ProjectCard';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -7,12 +6,10 @@ import { motion } from 'framer-motion';
 
 
 
+
 const ProjectPage = () => {
-
-
     const navigate =  useNavigate();
-
-    const projects = [
+    const projects= [
         {
             "id":'01',
             "image":p1,
@@ -33,19 +30,19 @@ const ProjectPage = () => {
         },
         {
             "id":'03',
-            "image":p2,
+            "image":analytic,
             "title":'Analystic Landing Page',
             "description":' this is a construction website for helping people connect with builders in Liberia.',
-            "link":'www.ibuilt.com',
+            "link":'https://landing-page-analytics.vercel.app/',
             skills:['React','Tailwind','api']
         
         },
         {
             "id":"04",
-            "image":p1,
+            "image":saloon,
             "title":'Hair Dressing Website',
             "description":' this is a ai website for helping people.',
-            "link":'/openai',
+            "link":'https://saloon-landing-page.vercel.app/',
             skills:['React','Tailwind','api']
         
         },
