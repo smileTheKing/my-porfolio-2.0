@@ -62,14 +62,14 @@ const ProjectPage = () => {
     }}}
     animate={{
       // opacity:1
-    }}  className="flex flex-col  w-full min-h-screen text-white">
-        <h2 className="title text-4xl font-bold text-center h-[80px] bg-slate-900/0 flex justify-center items-center uppercase rounded-md">My Project</h2>
+    }}  className="flex flex-col gap-6  w-full min-h-screen  text-white  bg-red-5f00 pb-20">
+        <h2 className="text-4xl font-bold text-center h-[80px] bg-slate-900/0 flex justify-center items-center uppercase rounded-md">My Projects</h2>
         <div className='mx-auto font-mono'>
             {/* isMobile */}
             <h4 className='text-orange-500 md:hidden text-center'>Click on project to read description</h4>
             <h4 className='text-orange-500 hidden md:block'>Hover over project to read description</h4>
         </div>
-        <div className="list_of_cards grid md:grid-cols-2 grid-cols-1 gap-6 w-full h-full mt-12">
+        <div className="list_of_cards grid md:grid-cols-2 grid-cols-1 gap-6 w-full h-full  md:mt-12">
             {projects.map((project)=> <ProjectCard onClick={()=>_handleNavigation(project)} key={project.id}  data={project} /> 
             )}
             
