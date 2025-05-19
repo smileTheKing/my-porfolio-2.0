@@ -62,8 +62,8 @@ const ProjectPage = () => {
     }}}
     animate={{
       // opacity:1
-    }}  className="flex flex-col gap-6  w-full min-h-screen  text-white  bg-red-5f00">
-        <h2 className="text-4xl font-bold text-center h-[80px] bg-slate-900/0 flex justify-center items-center uppercase rounded-md">My Projects</h2>
+    }}  className="flex flex-col gap-8 w-full flex-1  text-white  bg-red-500 py-8">
+        <h2 className="text-4xl font-bold text-center bg-slate-900/0 flex justify-center items-center uppercase rounded-md">My Projects</h2>
         <div className='mx-auto font-mono'>
             {/* isMobile */}
             <h4 className='text-orange-500 md:hidden text-center'>Click on project to read description</h4>
