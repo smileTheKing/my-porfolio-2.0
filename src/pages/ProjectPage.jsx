@@ -1,4 +1,4 @@
-import { p1,analytic, saloon, dashboard } from '../assets/assetFiles';
+import { p1,analytic,saloon,dashboard} from '../assets/assetFiles';
 import ProjectCard from '../components/ProjectCard';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -14,7 +14,7 @@ const ProjectPage = () => {
             "id":'01',
             "image":p1,
             "title":'MovieNook',
-            "description":' This is a website for searching up movies. It uses the movie database api to fetch data.',
+            "description":'This is a website for searching up movies. It uses the movie database api to fetch data.',
             "link":'https://movie-app-api-sigma.vercel.app/',
             skills:['React','Tailwind','api']
         
