@@ -15,7 +15,7 @@ const AboutPage = () => {
         duration:0.75
       } }}
       id='about'
-      className=" w-full  flex flex-col md:flex-row justify-between  text-white bg-red-200d py-16">
+      className=" w-full  flex flex-col md:flex-row justify-between  text-white bg-red-200d py-8">
 
       <div className="left-side md:w-[50%] h-full flex flex-col justify-center gap-y-5 ">
         <h1 className='font-semibold uppercase text-3xl'>

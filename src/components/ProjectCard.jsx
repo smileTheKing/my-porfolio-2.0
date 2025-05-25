@@ -1,13 +1,9 @@
 /* eslint-disable react/prop-types */
 import Button from "./Button";
 
-
-
 const ProjectCard = ({ data, }) => {
-    //  const[ isHover,setIsHover]= useState(false);
-
     return (
-        <div className=' aspect-video bg-white rounded-xl border overflow-auto'>
+        <div className=' aspect-video bg-white rounded-xl border overflow-hidden'>
             {data.image != null ?
 
                 <div className="relative h-full cursor-pointer">
@@ -26,9 +22,7 @@ const ProjectCard = ({ data, }) => {
                     </div>
                     <img className=' object-cover w-full h-full rounded' src={data?.image} />
                 </div>
-
                 : <span>No image right</span>}
-        
 
         </div>
     );

@@ -14,7 +14,7 @@ const Hero = () => {
     whileInView={{opacity:1, transition:{
         duration:1
     }}}
-    className=" w-full  md:h-[640px] min-h-full flex flex-col justify-around gap-8 md:gap-0  text-white">
+    className=" w-full  md:h-[640px] min-h-full flex flex-col justify-around items-center gap-8 md:gap-0  text-white">
       <div className="flex flex-col md:flex-row items-center gap-6">
       <div className="left-side w-full md:w-2/3 h-full flex flex-col justify-center gap-y-4 ">
           <h4 className='uppercase'>Hi there!</h4>
@@ -31,7 +31,10 @@ const Hero = () => {
               <Button title={'Resume'}/>
               </div>
               <div className="social-media text-xl md:text-3xl flex gap-6 ">
-              <FaGithub/>
+              <a href='https://github.com/smileTheKing' target='_blank' rel='noreferrer'>
+                <FaGithub className='text-gray-300 hover:text-orange-500 transition-all duration-300'/>
+              </a>
+             
               <FaLinkedinIn/>
               <FaX/>
               <FaFacebookF/>  
