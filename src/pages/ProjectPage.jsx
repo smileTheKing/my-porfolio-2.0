@@ -1,4 +1,4 @@
-import { p1, p2,analytic, saloon } from '../assets/assetFiles';
+import { p1,analytic, saloon, dashboard } from '../assets/assetFiles';
 import ProjectCard from '../components/ProjectCard';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -14,17 +14,17 @@ const ProjectPage = () => {
             "id":'01',
             "image":p1,
             "title":'MovieNook',
-            "description":' this is a ai website for helping people.',
-            "link":'/openai',
+            "description":' This is a website for searching up movies. It uses the movie database api to fetch data.',
+            "link":'https://movie-app-api-sigma.vercel.app/',
             skills:['React','Tailwind','api']
         
         },
         {
             "id":'02',
-            "image":p2,
-            "title":'seveen',
-            "description":' this is a ecomm website for shopping.',
-            "link":'/watersidemarket.com',
+            "image":dashboard,
+            "title":'Dashboard',
+            "description":'This is a dashboard for a website that helps people analyze their data.',
+            "link":'https://shpt-admin.vercel.app/',
             skills:['React','Tailwind','api']
         
         },
@@ -32,18 +32,18 @@ const ProjectPage = () => {
             "id":'03',
             "image":analytic,
             "title":'Analystic Landing Page',
-            "description":' this is a construction website for helping people connect with builders in Liberia.',
+            "description":'This is a responsive ui landing page for a website that helps people analyze their data.',
             "link":'https://landing-page-analytics.vercel.app/',
-            skills:['React','Tailwind','api']
+            skills:['React','Tailwind css','html','css']
         
         },
         {
             "id":"04",
             "image":saloon,
             "title":'Hair Dressing Website',
-            "description":' this is a ai website for helping people.',
+            "description":'This is a hair dressing website for helping customers book appointments with hair dressers.',
             "link":'https://saloon-landing-page.vercel.app/',
-            skills:['React','Tailwind','api']
+            skills:['React','Tailwind','api','firebase']
         
         },
     ]
